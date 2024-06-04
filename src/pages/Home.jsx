@@ -110,7 +110,6 @@ return (
 <button>Rentals</button>
 </div>
 </Carousel>
-
 </div>
 
 </div>
