@@ -154,10 +154,11 @@ width: 100%;
     color: white;
     font-weight: bold;
     transition: .4s;
-    border: 2px solid black;
 }
 .content-box1:hover{
     background-color: rgb(84, 124, 83);
+    border: 2px solid black;
+
 }
 
 .content-box2{
@@ -167,10 +168,11 @@ width: 100%;
     color: white;
     font-weight: bold;
     transition: .4s;
-    border: 2px solid black;
 }
 .content-box2:hover{
     background-color: rgb(84, 124, 83);
+    border: 2px solid black;
+
 }
 
 .content-box3{
@@ -180,10 +182,11 @@ width: 100%;
     color: white;
     font-weight: bold;
     transition: .4s;
-    border: 2px solid black;
 }
 .content-box3:hover{
     background-color: rgb(84, 124, 83);
+    border: 2px solid black;
+
 }
 
             /* HOME CONTAINER 3 CSS */
@@ -197,29 +200,33 @@ width: 100%;
     margin-top: 40px;
     margin-left: 5px;
     font-size: 18px;
-    border: 2px solid black;
     background-color: white;
+    /* border: 2px solid  black; */
+    ;
+
 }
-.serviceh1{
+.serviceh1 {
     color: black;
-    margin-left: 690px;
-    margin-top: 30px;
-}
-.service-box{
-    display: flex ;
-    justify-content: space-evenly;
-    margin-top: 40px;
-    flex: 1;
-    position: relative;
     text-align: center;
+    margin-top: 40px;
 }
+
+.carousel-inner {
+    display: flex;
+    justify-content: space-evenly;
+}
+
 .service-content1, .service-content2, .service-content3,.service-content4
 {
-    width: 22%;
+    justify-content: space-evenly;
     height: 400px;
+    margin-top: 25px;
     border: 2px solid black;
     border-radius: 10px;
     position: relative;
+    flex: 1;
+    margin: 50px;
+    text-align: center;
 }
 
 
@@ -227,6 +234,53 @@ width: 100%;
 {
     width: 100% ;
     height: 100%;
+}
+
+                        /* HOME CONTAINER 4 */
+
+.Card-container{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    margin-top: 25px;
+    margin-left: 5px;
+    font-size: 18px;
+    background-color: white;
+    /* border: 2px solid  black; */
+    ;
+
+}
+.Cardh1 {
+    color: black;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.product-Card1{
+    background-color: rgb(246, 246, 246);
+    height: 475px;
+    width: 425px;
+    border: 2px solid rgb(204, 204, 204);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.001);
+    padding:20px;
+    margin-top: 50px;
+    margin-left: 60px;
+    text-align: center;
+    display: inline-block;
+}
+
+.product-Card1 .Cardimg1{
+    width: 350px ;
+    height: 300px;
+    border-radius: 5%;
+    margin-bottom: 10px;
+}
+
+.product-Card1 .Card-title, .Card-price  {
+    margin: 0;
+    color: rgb(51, 51, 51);
+    margin: 5px;
 }
 
 

@@ -5,33 +5,37 @@ import "./Product.jsx";
 //Icons
 import { FaShoppingCart } from "react-icons/fa"; //CART
 import { FcServices, FcShipped, FcShop } from "react-icons/fc";
+import { RiShoppingBag4Fill } from "react-icons/ri"; //ShoppingBag
+
 
 //SLIDER CARASOUEL
-import Carousel from 'react-multi-carousel';
-import 'react-multi-carousel/lib/styles.css';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
 
-const responsive = {
-  superLargeDesktop: {
-    // the naming can be any, depends on you.
-    breakpoint: { max: 4000, min: 3000 },
-    items: 5
-  },
-  desktop: {
-    breakpoint: { max: 3000, min: 1024 },
-    items: 3
-  },
-  tablet: {
-    breakpoint: { max: 1024, min: 464 },
-    items: 2
-  },
-  mobile: {
-    breakpoint: { max: 464, min: 0 },
-    items: 1
-  }
-};
+
 
 
 function Home() {
+
+  const responsive = {
+    superLargeDesktop: {
+      // the naming can be any, depends on you.
+      breakpoint: { max: 4000, min: 3000 },
+      items: 5
+    },
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1
+    }
+  };
 
 return (
     <div className='home'>
@@ -55,8 +59,8 @@ return (
     <div className='picture1'>
     <img className='home__image1' src="../images/pic1.jpg" alt="pic1"/>
     <p>YOUR  ONE  STOP  SHOP  FOR    <br></br>
-    ALL  THINGS  <span>BOTANICAL</span> <br></br>
-      AND  <span>DECOR</span></p>
+    ALL  THINGS  <span>"BOTANICAL"</span> <br></br>
+      AND  <span>"DECOR"</span></p>
     <button className='getStated_btn'>Get Started</button>
     </div>
     <div className='picture2'>
@@ -84,40 +88,107 @@ return (
 
                           {/* HOME CONTAINER 3 */}
 <div className='home-container3'>
+  
 <div className='services-container'>
+
 <h1 className='serviceh1'> OUR SERVICES</h1>
 
-<div className='service-box'>
 
-<Carousel responsive={responsive}>
+<Carousel responsive={responsive}  className="carousel-inner">
 
-<div className='service-content1'>
-    <img className="imageservice1" src="../images/productt.jpg " alt="Products"/>
-    <button>Products</button>
+  <div className='service-content1'>
+      <img className="imageservice1" src="../images/productt.jpg " alt="Products"/>
+      <button>Products</button>
+        </div>
+
+  <div className='service-content2'>
+      <img className="imageservice2" src="../images/heritage.jpg " alt="Decorations"/>
+      <button>Decorations</button>
+  </div>
+
+  <div className='service-content3'>
+  <img className="imageservice3" src="../images/gardening.jpg" alt="Gardening"/>
+  <button>Gardening</button>
+  </div>
+
+  <div className='service-content4'>
+  <img className="imageservice4" src="../images/rentalservice.jpg " alt="Rentals"/>
+  <button>Rentals</button>
+  </div>
+  </Carousel>
+
+</div>
+</div>
+
+
+                        {/* HOME CONTAINER 4 */}
+<div className='home-container4'>
+
+
+<div className='Card-container'>
+
+<h1 className='Cardh1'> SHOP WITH US <RiShoppingBag4Fill/> </h1>
+
+
+<Carousel responsive={responsive}  className="carousel-inner">
+
+<div className='product-Card1'>
+      <img className="Cardimg1" src="../images/productt.jpg " alt="card1"/>
+      <h2 className='Card-title'>Monstera Plant</h2>
+      <h3 className='Card-price'>NPR-2200/-</h3>
+      <button>Add to Cart</button>
+        </div>
+
+        <div className='product-Card1'>
+      <img className="Cardimg1" src="../images/productt.jpg " alt="card1"/>
+      <h2 className='Card-title'>Monstera Plant</h2>
+      <h3 className='Card-price'>NPR-2200/-</h3>
+      <button>Add to Cart</button>
+        </div>
+
+        <div className='product-Card1'>
+      <img className="Cardimg1" src="../images/productt.jpg " alt="card1"/>
+      <h2 className='Card-title'>Monstera Plant</h2>
+      <h3 className='Card-price'>NPR-2200/-</h3>
+      <button>Add to Cart</button>
+        </div>
+
+        <div className='product-Card1'>
+      <img className="Cardimg1" src="../images/productt.jpg " alt="card1"/>
+      <h2 className='Card-title'>Monstera Plant</h2>
+      <h3 className='Card-price'>NPR-2200/-</h3>
+      <button>Add to Cart</button>
+        </div>
+
+        <div className='product-Card1'>
+      <img className="Cardimg1" src="../images/productt.jpg " alt="card1"/>
+      <h2 className='Card-title'>Monstera Plant</h2>
+      <h3 className='Card-price'>NPR-2200/-</h3>
+      <button>Add to Cart</button>
+        </div>
+
+        <div className='product-Card1'>
+      <img className="Cardimg1" src="../images/productt.jpg " alt="card1"/>
+      <h2 className='Card-title'>Monstera Plant</h2>
+      <h3 className='Card-price'>NPR-2200/-</h3>
+      <button>Add to Cart</button>
+        </div>
+  </Carousel>
+
+</div>
+</div>          {/* HOME CONTAINER 4 ENDS */}
+
+                  {/* HOME CONTAINER 5 TESTIMONIALS */}
+
+      <div className="home-container5">
+
+        
       </div>
-<div className='service-content2'>
-    <img className="imageservice2" src="../images/heritage.jpg " alt="Decorations"/>
-    <button>Decorations</button>
-</div>
-
-<div className='service-content3'>
-<img className="imageservice3" src="../images/gardening.jpg" alt="Gardening"/>
-<button>Gardening</button>
-</div>
-
-<div className='service-content4'>
-<img className="imageservice4" src="../images/rentalservice.jpg " alt="Rentals"/>
-<button>Rentals</button>
-</div>
-</Carousel>
-</div>
-
-</div>
-</div>
-</div>
+</div>     {/* //HOME CONTAINER END */}
 
 
-</div>
+</div>    // MAIN HOME DIV END
+
 );
 }
 export default Home;
