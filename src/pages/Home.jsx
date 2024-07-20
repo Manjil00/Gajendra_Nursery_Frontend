@@ -85,52 +85,57 @@ const Home = () => {
 
 <div className="section2 mt-7 w-full h-auto md:h-auto">
   <div className="flex justify-evenly items-center mx-1 p-2 md:h-auto">
-    <div className="service1 w-[110px] h-auto md:h-auto bg-slate-300 rounded-xl text-black font-writingFont md:w-[300px] text-center">
+    <div className="service1 w-[110px] h-auto md:h-auto bg-bgcolor rounded-xl text-black font-writingFont md:w-[300px] text-center">
       <h1 className="p-3 mt-2 font-sans font-bold text-4xl md:text-6xl">
         <CountUp end={25}
         duration={6}></CountUp>
         +
       </h1>
-      <p className="mx-5 my-2 p-1 font-sans text-sm text-start md:text-xl ">Years of Service</p>
+      <p className="mx-5 my-2 p-1 font-sans text-sm text-center md:text-xl ">Years of Service</p>
     </div>
-    <div className="service2  w-[110px] h-auto md:h-auto bg-slate-300 rounded-xl text-black font-writingFont md:w-[300px] text-center ">
+    <div className="service2  w-[110px] h-auto md:h-auto bg-bgcolor rounded-xl text-black font-writingFont md:w-[300px] text-center ">
     <h1 className="p-3 mt-2 font-sans font-bold text-4xl md:text-6xl">
     <CountUp end={30}
         duration={6}></CountUp>
         +
       </h1>
-      <p className=" mx-5 my-2 p-1 font-sans text-sm text-start md:text-xl">Years of Experience</p>
+      <p className=" mx-5 my-2 p-1 font-sans text-sm text-center md:text-xl">Years of Experience</p>
     </div>
-    <div className="service3  w-[110px] h-auto md:h-auto bg-slate-300 rounded-xl md:w-[300px] text-center ">
+    <div className="service3  w-[110px] h-auto md:h-auto bg-bgcolor rounded-xl md:w-[300px] text-center ">
     <h1 className="p-3 mt-2 font-sans font-bold text-4xl md:text-6xl">
     <CountUp end={40}
         duration={6}></CountUp>
         +
       </h1>
-      <p className=" mx-5 my-2 p-1 font-sans text-sm text-start md:text-xl">Years of Service</p>
+      <p className=" mx-5 my-2 p-1 font-sans text-sm text-center md:text-xl">Satisfied customers</p>
     </div>
   </div>
 
 </div>
 
     {/* main body div sec3 starts */}
-<div className="Section3 mt-7  w-full h-auto md:h-auto bg-green-400flex justify-evenly items-center bg-red-800">
-  <h1 className="text-black font-LogoFont text-center text-3xl md:text-5xl"> Our Services</h1>
+<div className="Section3 my-7 w-full h-auto md:h-auto bg-bgcolor">
+  <h1 className="text-black font-LogoFont text-center text-3xl md:text-5xl mt-4 p-7"> OUR SERVICES</h1>
     <Carousel responsive={responsive} className="flex justify-evenly items-center ">
-    <div className="products  w-[150px] h-[100px] md:h-auto m-4 bg-green-700 rounded-xl">
-  <img src='' className='' alt='Product'/>
+        
+    <div className="products w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
+    <img src='./images/productt.jpg' className=' mx-4 rounded-xl  ' alt='Product'/>
+    <button className="button-default">Products</button>
   </div>
 
-  <div className="Decor">
-  <img src='' className=' w-[150px] h-[100px] md:h-auto m-4 bg-green-700 rounded-xl' alt='Decor'/>
-
-  </div>
-  <div className="gardening">
-  <img src='' className=' w-[150px] h-[100px] md:h-auto m-4 bg-green-700 rounded-xl' alt='Gardening  '/>
+  <div className="Decor w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
+  <img src='./images/productt.jpg' className='  mx-4 rounded-xl' alt='Decor'/>
+  <button className="button-default">Decorations</button>
   </div>
 
-  <div className="Ceramics">
-  <img src='' className=' w-[150px] h-[100px] md:h-auto m-4 bg-green-700 rounded-xl' alt='Ceramics'/>
+  <div className="gardening w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
+  <img src='./images/rentalservice.jpg' className='  mx-4 rounded-xl' alt='Gardening  '/>
+  <button className="button-default">Gardening</button>
+  </div>
+
+  <div className="Ceramics w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
+  <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Ceramics'/>
+  <button className="button-default">Ceramics</button>
   </div>
     </Carousel>
   
