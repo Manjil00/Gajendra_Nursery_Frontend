@@ -21,6 +21,7 @@ module.exports = {
         },
         colors:{
             bgcolor: '#D9D9D9',
+            appleblack: '#1A1A1A',
         }
     },
     },

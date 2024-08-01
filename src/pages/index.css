@@ -9,5 +9,8 @@
 
 
 .button-default {
-    @apply w-[100px] h-[30px] md:h-[50px] md:w-[200px] m-2 bg-black text-sm md:text-xl text-white rounded-xl cursor-pointer text-center hover:animate-bounce;
+    @apply w-[100px] h-[40px] md:h-[50px] md:w-[200px] m-2
+    bg-green-700 text-sm md:text-xl text-black rounded-xl cursor-pointer
+    text-center hover:animate-bounce shadow-xl shadow-black
+    ;
 }
