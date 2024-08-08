@@ -1,27 +1,60 @@
-import React from 'react'
-import { FaShoppingCart } from "react-icons/fa"; //CART
+import React from 'react';
+import Footer from "../components/Footer";
+import Nav from "../components/Nav";
+import './index.css';
 
-
-function Product () {
+const Product = () => {
   return (
+<div className="main-container">
+  {/* NAVIGATION BAR */}
+  <Nav/>
+  
+  <div className="body flex w-full h-[100%]  relative z-[-1]">
 
-                                     //NAVIGATION BAR
-    <div className='home'>
-  <div className='navbar'>
-    <nav>
-      <img className='logoimage' src='../images/GN_logo.png' alt="logo"/>
-      <h2 className="logo">Gajendra <span>Nursery</span></h2>
-      <ul>
-        <li> <a href="Product">Product</a></li>
-        <li> <a href="Decorations">Decorations</a></li>
-        <li> <a href="Blogs">Blogs</a></li>
-        <li> <a href="AboutUs">About Us</a></li>
+    <div className="sidebar h-[100%] w-[20%] md:w-[15%] bg-green-700">
+      <ul className='flex flex-col justify-evenly items-center my-10 gap-5'>
+
+        <li className='text-md md:text-3xl text-bgcolor font-LogoFont underline font-semibold'>Products</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Indoor</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Outdoor</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Seasonal</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Others</li>
+
+        <li className='text-md md:text-3xl text-bgcolor font-LogoFont underline'>Decorations</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Stage</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Backdrop</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Mandap</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Entrance</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Photo-Booth</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Name-Board</li>
+
+        <li className='text-md md:text-3xl text-bgcolor font-LogoFont underline'>Ceramics</li>
+        <li className='text-md md:text-3xl text-bgcolor font-LogoFont underline'>Fertilizers</li>
+        
+        <li className='text-md md:text-3xl text-bgcolor font-LogoFont underline'>Gardening</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Rock Garden</li>
+        <li className='text-sm md:text-xl text-appleblack font-writingFont '>Garden Maintainence</li>
+
+
+
       </ul>
-      <button type='button'> Cart   <FaShoppingCart /> </button>
-    </nav>
+
+
+
+      
     </div>
+
+    <div className="section2">
+
     </div>
+
+    
+  </div>
+
+<Footer/>
+  {/* maincontrainer div below */}
+</div>
   )
 }
 
-export default Product;
+export default Product

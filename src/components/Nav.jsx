@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { RxCross1, RxHamburgerMenu } from "react-icons/rx"; //ICONS
+import { Link } from 'react-router-dom';
 
 
 const Nav = () => {
@@ -7,21 +8,20 @@ const Nav = () => {
 const toggleNavMenu = () => setIsNavOpen(!isNavOpen);
 
 return (
-    <nav className="flex justify-between px-6 py-3">
+    <nav className="flex justify-between px-6 py-3 z-50">
     <div className="flex justify-center items-center">
         <img className="w-10 h-10 mr-3" src="./images/GN_logo.png" alt="Logo" />
         <h1 className='text-black ml-6  text-sm md:text-4xl font-LogoFont
 cursor-pointer flex justify-center items-center'>Gajendra Nursery</h1>
+
     </div>
-    <div className={`bg-white absolute min-h-[40vh] left-0 top-[9%] w-full p-5 flex flex-col md:static md:flex md:min-h-fit md:w-auto gap-8 text-sm ${isNavOpen ? 'block' : 'hidden'}`}>
+    <div className={`bg-white absolute min-h-[30vh] left-0 top-[9%] w-full p-5 flex flex-col md:static md:flex md:min-h-fit md:w-auto gap-9 text-sm ${isNavOpen ? 'block' : 'hidden'}`}>
         <ul className=" cursor-pointer flex flex-col gap-4 md:flex-row  md:gap-8 md:justify-evenly md:text-xl font-writingFont">
-        <a href="#"><li className="hover:text-green-600">Home</li></a> 
-        <a href="#"><li className="hover:text-green-600">Products</li></a>
-        <a href="#"><li className="hover:text-green-600">Products</li></a>
-        <a href="#"><li className="hover:text-green-600">Products</li></a>
-        <a href="#"><li className="hover:text-green-600">Products</li></a>
-        <a href="#"><li className="hover:text-green-600">Products</li></a>
-        <a href="#"><li className="hover:text-green-600">Products</li></a>
+        <Link to="/"><li className="hover:text-green-600">Home</li></Link>
+        <Link to="/Product"><li className="hover:text-green-600">Products & Decorations</li></Link>
+        <Link to="/Blog"><li className="hover:text-green-600">Blog</li></Link>
+        <Link to="/AboutUs"><li className="hover:text-green-600">About us</li></Link>
+        <Link to="/AboutUs"><li className="hover:text-green-600">Client Dairies</li></Link>
         </ul>
     </div>
     <div>

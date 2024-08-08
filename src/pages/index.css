@@ -11,6 +11,9 @@
 .button-default {
     @apply w-[100px] h-[40px] md:h-[50px] md:w-[200px] m-2
     bg-green-700 text-sm md:text-xl text-black rounded-xl cursor-pointer
-    text-center hover:animate-bounce shadow-xl shadow-black
+    text-center
+    hover:h-[50px]
+    hover:md:h-[60px] hover:w-[110px] hover:md:w-[210px] duration-100
+    shadow-xl shadow-slate-900
     ;
 }

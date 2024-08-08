@@ -17,7 +17,7 @@ module.exports = {
         },
         animation: {
         'bounce-slow': 'bounce 2s linear infinite',
-        'word-rotate':'blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) infinite'
+        
         },
         colors:{
             bgcolor: '#D9D9D9',
