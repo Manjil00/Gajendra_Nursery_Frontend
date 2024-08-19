@@ -1,18 +1,15 @@
 import React from "react";
-import CountUp from 'react-countup';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import Countup from "../components/Countup";
 import './index.css';
 
 
 // COMPONENT IMPORT
 import Footer from "../components/Footer";
-import MarqueeTestimonials from "../components/MarqueeTestimonials";
+import Testimonials from "../components/Testimonials";
 import Nav from "../components/Nav";
-
-
-//ICONS IMPORT
-import { CgShoppingBag } from "react-icons/cg";
+import Shophome from "../components/Shophome";
 
 
 
@@ -69,32 +66,7 @@ const Home = () => {
 </div>
 
 <div className="section2 mt-7 w-full h-auto md:h-auto">
-  <div className="flex justify-evenly items-center mx-1 p-2 md:h-auto">
-    <div className="service1 w-[110px] h-auto md:h-auto bg-bgcolor rounded-xl text-black font-writingFont md:w-[300px] text-center">
-      <h1 className="p-3 mt-2 font-sans font-bold text-4xl md:text-6xl">
-        <CountUp end={25}
-        duration={6}></CountUp>
-        +
-      </h1>
-      <p className="mx-5 my-2 p-1 font-sans text-sm text-center md:text-xl ">Years of Service</p>
-    </div>
-    <div className="service2  w-[110px] h-auto md:h-auto bg-bgcolor rounded-xl text-black font-writingFont md:w-[300px] text-center ">
-    <h1 className="p-3 mt-2 font-sans font-bold text-4xl md:text-6xl">
-    <CountUp end={30}
-        duration={6}></CountUp>
-        +
-      </h1>
-      <p className=" mx-5 my-2 p-1 font-sans text-sm text-center md:text-xl">Years of Experience</p>
-    </div>
-    <div className="service3  w-[110px] h-auto md:h-auto bg-bgcolor rounded-xl md:w-[300px] text-center ">
-    <h1 className="p-3 mt-2 font-sans font-bold text-4xl md:text-6xl">
-    <CountUp end={40}
-        duration={6}></CountUp>
-        +
-      </h1>
-      <p className=" mx-5 my-2 p-1 font-sans text-sm text-center md:text-xl">Satisfied customers</p>
-    </div>
-  </div>
+  <Countup/>
 
 </div>
 
@@ -133,57 +105,13 @@ const Home = () => {
 </div>
 
                           {/* SECTION 4 here */}
-<div className="Section-4 my-7 w-full h-auto md:h-auto bg-bgcolor rounded-xl">
-  <div className="flex justify-center items-center">
-  <h1 className="text-black font-LogoFont text-center text-3xl md:text-5xl mt-4 p-7"> SHOP WITH US</h1>
-  <CgShoppingBag className="w-[30px] h-[30px]"/>
 
+  <div className="Section4">
+    <Shophome/>
   </div>
-
-
-    <Carousel responsive={responsive}  swipeable={true} className="flex justify-evenly items-center ">
-        
-    <div className=" w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7 pb-3">
-    <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Product'/>
-    <h1 className="text-slate-600 text-center text-lg font-writingFont font-semibold">Montserrat Plant</h1>
-    <p className="text-slate-500 text-center text-sm font-writingFont">PRICE: Rs 1200</p>
-    <button className="button-default">Add to Cart</button>
-  </div>
-
-  <div className=" w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7 pb-3">
-  <img src='./images/productt.jpg' className='  mx-4 rounded-xl' alt='Decor'/>
-  <h1 className="text-slate-600 text-center text-lg font-writingFont font-semibold">Montserrat Plant</h1>
-  <p className="text-slate-500 text-center text-sm font-writingFont">PRICE: Rs 1200</p>
-  <button className="button-default">Add to Cart</button>
-  </div>
-
-  <div className=" w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7 pb-3">
-  <img src='./images/rentalservice.jpg' className='  mx-4 rounded-xl' alt='Gardening '/>
-  <h1 className="text-slate-600 text-center text-lg font-writingFont font-semibold">Montserrat Plant</h1>
-  <p className="text-slate-500 text-center text-sm font-writingFont">PRICE: Rs 1200</p>
-  <button className="button-default">Add to Cart</button>
-  </div>
-
-  <div className=" w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7  pb-3">
-  <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Ceramics'/>
-      <h1 className="text-slate-600 text-center text-lg font-writingFont font-semibold">Montserrat Plant</h1>
-    <p className="text-slate-500 text-center text-sm font-writingFont">PRICE: Rs 1200</p>
-  <button className="button-default">Add to Cart</button>
-  </div>
-    </Carousel>
-    </div>
-  
-                        {/* //SECTION 5 Testimonials */}
-<div className="Section5 my-7 w-full h-[250px] md:h-[500px] bg-bgcolor rounded-xl flex">
-  <div className="left w-[70%] h-[300px] md:h-full ">
-  <h1 className="text-center font-LogoFont text-3xl md:text-5xl pt-4">TESTIMONIALS</h1>
-  <MarqueeTestimonials/>
-  </div>
-
-  <div className="right w-[30%] h-full border-black border-4">
-
-  </div>
-
+                {/* //SECTION 5 Testimonials */}
+<div className="Section5">
+  <Testimonials/>
 </div>
 
                          {/* //SECTION 6  Socialmedia */}

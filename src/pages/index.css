@@ -17,3 +17,12 @@
     shadow-xl shadow-slate-900
     ;
 }
+.button-small {
+    @apply w-[30px] h-[30px] md:h-[40px] md:w-[40px] m-2
+    bg-bgcolor text-sm md:text-xl text-black rounded-xl cursor-pointer
+    text-center
+    hover:h-[40px]
+    hover:md:h-[50px] hover:w-[40px] hover:md:w-[50px] duration-100
+    shadow-xl shadow-slate-900 font-bold
+    ;
+}

@@ -8,7 +8,7 @@ const Blog = () => {
   <div className="main-container">
     <Nav/>
 
-    <div className="section1   rounded-2xl px-5 bg-bgcolor h-[200px] md:h-[250px] w-[95%] mx-auto flex flex-col justify-evenly gap-3 drop-shadow-2xl relative z-[-1]">
+    <div className="section1   rounded-2xl px-5 bg-bgcolor h-[200px] md:h-[250px] w-[95%] mx-auto flex flex-col justify-evenly gap-3 drop-shadow-2xl relative">
     <input className=' h-[100px]  w-full  rounded-2xl font-writingFont text-start cursor-text  placeholder-black' placeholder='          Write what you would like to know about?'></input>
     <button className="button-default">Send</button>
 
