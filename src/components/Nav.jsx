@@ -22,6 +22,8 @@ cursor-pointer flex justify-center items-center'>Gajendra Nursery</h1>
         <Link to="/Blog"><li className="hover:text-green-600">Blog</li></Link>
         <Link to="/AboutUs"><li className="hover:text-green-600">About us</li></Link>
         <Link to="/AboutUs"><li className="hover:text-green-600">Client Dairies</li></Link>
+        <Link to="/cart"><li className="hover:text-green-600">Cart</li></Link>
+
         </ul>
     </div>
     <div>

@@ -4,6 +4,7 @@ import Admin from "./pages/Admin.jsx";
 import Blog from "./pages/Blog.jsx";
 import Home from "./pages/Home.jsx";
 import Product from "./pages/Product.jsx";
+import Cart from "./pages/Cart.jsx";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/aboutus" element={<AboutUs/>} />
         <Route path="/blog" element={<Blog/>} />
         <Route path="/admin" element={<Admin/>} />
+        <Route path="/cart" element={<Cart/>} />
       </Routes>
       </BrowserRouter>
   
