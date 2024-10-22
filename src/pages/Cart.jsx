@@ -1,7 +1,5 @@
 import React from 'react';
 import Nav from "../components/Nav";
-//ICONS
-import { RiDeleteBin5Line } from "react-icons/ri";
 
 import { useSelector, useDispatch } from "react-redux";
 import { decNum, incNum } from "../actions/index";
@@ -13,11 +11,11 @@ const Cart = () => {
     const dispatch= useDispatch();
     
 return (
-    <div className='main w-full h-[800px] bg-appleblack'>
+    <div className='main w-full h-[800px]'>
     <Nav/>
 
     <div className="total h-[100px] w-full mt-5 flex justify-start items-center ">
-    <h1 className=' font-sans font-semibold ml-20 text-sm md:text-3xl text-black'>Total Price: $ 1000.00</h1>
+    <h1 className=' font-sans font-semibold ml-20 text-sm md:text-3xl text-black'>Total Price: $ 62.09</h1>
     <button
     className='h-[50px] w-[100px] ml-10 bg-blue-600 rounded-xl font-sans font-semibold text-white'> Checkout</button>
     </div>
@@ -32,13 +30,13 @@ return (
             <div className="qty flex justify-center items-center bg-blue-600 gap-4 rounded-lg p-2">
                 <button onClick={()=>mystate > 0 ? dispatch((decNum())) : 0}
                 className='bg-blue-600 rounded-xl text-white p-1'>-</button>
-                <p className='text-black font-sans md:font-semibold text-sm md:text-xl'>Quantity: {mystate}</p>
+                <p className='text-white font-sans md:font-semibold text-sm md:text-xl'>Quantity: {mystate}</p>
                 <button onClick={()=>dispatch((incNum()))}
                 className='bg-blue-600 rounded-xl text-white p-1'>+</button>
 
             </div>
         <h2 className='text-black md:font-semibold font-sans text-xl md:text-2xl'>$ 62.09</h2>
-        <button className='h-[50px] w-[50px]'><RiDeleteBin5Line /></button>
+        <button className='h-[50px] w-[100px] bg-green-600 rounded-xl'>Delete</button>
         </div>
             
         </div>
