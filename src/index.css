@@ -1,13 +1,28 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Tai+Heritage+Pro:wght@400;700&display=swap');
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+.button-default {
+    @apply w-[100px] h-[40px] md:h-[50px] md:w-[200px] m-2
+    bg-green-700 text-sm md:text-xl text-black rounded-xl cursor-pointer
+    text-center
+    /* hover:h-[50px]
+    hover:md:h-[60px] hover:w-[110px] hover:md:w-[210px] duration-100 */
+    shadow-xl shadow-slate-900
+    ;
+}
+.button-small {
+    @apply w-[30px] h-[30px] md:h-[40px] md:w-[40px] m-2
+    bg-bgcolor text-sm md:text-xl text-black rounded-xl cursor-pointer
+    text-center
+    /* hover:h-[40px]
+    hover:md:h-[50px] hover:w-[40px] hover:md:w-[50px] duration-100 */
+    shadow-xl shadow-slate-900 font-bold
+    ;
 }

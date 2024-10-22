@@ -3,7 +3,7 @@ import React from 'react';
 import Footer from '../components/Footer';
 import MarqueeAboutUs from '../components/MarqueeAboutUs';
 import Nav from "../components/Nav";
-import './index.css';
+import '../index.css';
 
 
 const AboutUs = () => {

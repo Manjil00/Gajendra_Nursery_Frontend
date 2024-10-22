@@ -3,7 +3,7 @@
   // Components
   import Footer from "../components/Footer";
 import Nav from "../components/Nav";
-import './index.css';
+import '../index.css';
 
   // ICONS
   import { CiSearch } from "react-icons/ci";

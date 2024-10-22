@@ -1,5 +1,6 @@
 import React from 'react';
 import Nav from "../components/Nav";
+import '../index.css';
 
 import { useSelector, useDispatch } from "react-redux";
 import { decNum, incNum } from "../actions/index";
