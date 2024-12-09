@@ -11,8 +11,6 @@ import Testimonials from "../components/Testimonials";
 import Nav from "../components/Nav";
 import Shophome from "../components/Shophome";
 
-
-
 const Home = () => {
 
     const responsive = {
