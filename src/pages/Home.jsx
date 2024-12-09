@@ -42,7 +42,7 @@ const Home = () => {
             <div className=" border-2 flex  w-[100%] h-[300px] mt-[5px] md:h-[500px] object-contain overflow-hidden">
 
 <div className="relative w-[70%] h-[300px] md:h-[500px] z-[-1]">
-    <img src="./images/pic1.jpg" className="object-cover w-full h-full " alt="pic1"/>
+    <img src="./images/pic1.jpg" className="object-cover w-full h-full " alt="pic1" loading="lazy"/>
     <p className="absolute left-2 top-[12%]  text-sm font-section1Font object-hidden  md:top-[15%] md:text-3xl md:left-10 font-LogoFont ">YOUR . ONE . STOP . SHOP .
       <br/>FOR . ALL .
     <br/>
@@ -53,11 +53,11 @@ const Home = () => {
     
     <div className="flex flex-col object-contain w-[30%]">
     <div className="w-full h-[300px] md:h-[50%]">
-    <img src="./images/heritage.jpg" className="object-cover w-full h-full " alt="pic1"/>
+    <img src="./images/heritage.jpg" className="object-cover w-full h-full " alt="pic1" loading="lazy"/>
     </div>
 
     <div className="w-full h-[300px] md:h-[50%]">
-    <img src="./images/radison.jpg" className="object-cover w-full h-full " alt="pic1"/>
+    <img src="./images/radison.jpg" className="object-cover w-full h-full " alt="pic1" loading="lazy"/>
     </div>
     </div>
     {/* main body div sec1 ends */}
@@ -74,28 +74,28 @@ const Home = () => {
     <Carousel responsive={responsive} swipeable={true} className="flex justify-evenly items-center ">
         
     <div className="products w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
-    <img src='./images/productt.jpg' className=' mx-4 rounded-xl  ' alt='Product'/>
+    <img src='./images/productt.jpg' className=' mx-4 rounded-xl  ' alt='Product' loading="lazy"/>
     <button className="button-default">Products</button>
   </div>
 
   <div className="Decor w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
-  <img src='./images/productt.jpg' className='  mx-4 rounded-xl' alt='Decor'/>
+  <img src='./images/productt.jpg' className='  mx-4 rounded-xl' alt='Decor' loading="lazy"/>
   <button className="button-default">Decorations</button>
   </div>
 
   <div className="gardening w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
-  <img src='./images/rentalservice.jpg' className='  mx-4 rounded-xl' alt='Gardening  '/>
+  <img src='./images/rentalservice.jpg' className='  mx-4 rounded-xl' alt='Gardening' loading="lazy"/>
   <button className="button-default">Gardening</button>
   </div>
 
   <div className="Ceramics w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
-  <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Ceramics'/>
+  <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Ceramics' loading="lazy"/>
   <button className="button-default">Ceramics</button>
   </div>
 
   
   <div className="fertilizers w-[150px] h-[200px] md:h-[350px] md:w-[350px] flex flex-col items-center mx-7">
-  <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Fertilizers'/>
+  <img src='./images/productt.jpg' className=' mx-4 rounded-xl' alt='Fertilizers' loading="lazy"/>
   <button className="button-default">Fertilizers</button>
   </div>
     </Carousel>
